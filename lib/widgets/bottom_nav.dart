@@ -49,8 +49,8 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
             label: 'Loans',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.notifications),
-            label: 'Notifications',
+            icon: Icon(Icons.design_services),
+            label: 'Services',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/credit_card.dart';
-import '../widgets/legend_item.dart';
-import '../widgets/pie_chart.dart';
-import '../widgets/app_drawer.dart';
+import '../components/credit_card.dart';
+import '../components/pie_chart.dart';
+import '../components/search_bar.dart';
 import '../widgets/app_bar.dart';
+import '../widgets/app_drawer.dart';
+import '../widgets/legend_item.dart';
 
 class CreditCardsScreen extends StatelessWidget {
   const CreditCardsScreen({super.key});
@@ -12,32 +13,16 @@ class CreditCardsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[50],
-      drawer: const AppDrawer(), // 👈 Add drawer here
+      backgroundColor: Color(0xFFF8FAFC),
       appBar:  const CustomAppBar(title: 'Credit Cards'),
+      drawer: const AppDrawer(),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Search Bar
-            Container(
-              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-              decoration: BoxDecoration(
-                color: Colors.grey[100],
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Row(
-                children: [
-                  Icon(Icons.search, color: Colors.grey[600], size: 20),
-                  SizedBox(width: 12),
-                  Text(
-                    'Search for something',
-                    style: TextStyle(color: Colors.grey[600], fontSize: 16),
-                  ),
-                ],
-              ),
-            ),
+            const SearchSomething(),
 
             SizedBox(height: 30),
 
@@ -153,7 +138,7 @@ class CreditCardsScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.05),
+                    color: Colors.black.withValues(alpha: 0.05),
                     blurRadius: 10,
                     offset: Offset(0, 2),
                   ),
