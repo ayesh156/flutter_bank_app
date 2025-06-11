@@ -4,6 +4,7 @@ import '../widgets/credit_card.dart';
 import '../widgets/legend_item.dart';
 import '../widgets/pie_chart.dart';
 import '../widgets/app_drawer.dart';
+import '../widgets/app_bar.dart';
 
 class CreditCardsScreen extends StatelessWidget {
   const CreditCardsScreen({super.key});
@@ -13,36 +14,7 @@ class CreditCardsScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[50],
       drawer: const AppDrawer(), // 👈 Add drawer here
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: Builder(
-          builder: (context) => IconButton(
-            icon: const Icon(Icons.menu, color: Colors.black),
-            onPressed: () => Scaffold.of(context).openDrawer(),
-          ),
-        ),
-        centerTitle: true,
-        title: Text(
-          'Credit Cards',
-          style: TextStyle(
-            color: Colors.black,
-            fontWeight: FontWeight.w600,
-            fontSize: 18,
-          ),
-        ),
-        actions: [
-          Padding(
-            padding: EdgeInsets.only(right: 16),
-            child: CircleAvatar(
-              radius: 18,
-              backgroundImage: NetworkImage(
-                'https://content.latest-hairstyles.com/wp-content/uploads/collarbone-cut-with-soft-waves-1.jpg',
-              ),
-            ),
-          ),
-        ],
-      ),
+      appBar:  const CustomAppBar(title: 'Credit Cards'),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(20),
         child: Column(
