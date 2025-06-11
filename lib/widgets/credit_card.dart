@@ -64,21 +64,12 @@ class CreditCard extends StatelessWidget {
                     ),
                   ],
                 ),
-                Container(
-                  width: 35,
-                  height: 25,
-                  decoration: BoxDecoration(
-                    color: Colors.white.withAlpha(51),
-                    borderRadius: BorderRadius.circular(4),
-                  ),
+                SizedBox(
+                  width: 45,
+                  height: 35,
                   child: Center(
-                    child: Text(
-                      'CHIP',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 8,
-                        fontWeight: FontWeight.bold,
-                      ),
+                    child: Image.asset(
+                      'assets/images/chip-card.png',
                     ),
                   ),
                 ),
@@ -162,7 +153,7 @@ class CreditCard extends StatelessWidget {
                 bottomRight: Radius.circular(8),
               ),
             ),
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+            padding: EdgeInsets.fromLTRB(20, 8, 15, 8),
             height: 55,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
