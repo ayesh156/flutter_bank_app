@@ -41,12 +41,12 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
         type: BottomNavigationBarType.fixed,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.credit_card),
-            label: 'Cards',
+            icon: Icon(Icons.pie_chart),
+            label: 'Dashboard',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.pie_chart),
-            label: 'Statistics',
+            icon: Icon(Icons.credit_card),
+            label: 'Loans',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.notifications),
