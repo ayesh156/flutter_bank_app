@@ -15,13 +15,13 @@ class SummarySection extends StatelessWidget {
         children: [
             LoanSummaryCard(
             icon: Icons.person,
-            iconColor: Color(0xFF3B82F6),
+            iconColor: Color(0xFF1E3A8A),
             title: 'Personal Loans',
             amount: '\$50,000',
           ),
           LoanSummaryCard(
-            icon: Icons.business,
-            iconColor: Color(0xFF10B981),
+            icon: Icons.next_week,
+            iconColor: Color(0xFF1E3A8A),
             title: 'Corporate Loans',
             amount: '\$100,000',
           ),

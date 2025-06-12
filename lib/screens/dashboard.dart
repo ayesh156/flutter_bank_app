@@ -5,7 +5,7 @@ import '../components/pie_chart.dart';
 import '../components/search_bar.dart';
 import '../widgets/app_bar.dart';
 import '../widgets/app_drawer.dart';
-import '../widgets/legend_item.dart';
+import '../components/legend_item.dart';
 
 class CreditCardsScreen extends StatelessWidget {
   const CreditCardsScreen({super.key});
